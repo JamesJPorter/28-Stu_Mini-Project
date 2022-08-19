@@ -1,0 +1,130 @@
+body {
+    background-color: var(--main-bg-color);
+}
+
+:root {
+    --main-bg-color: rgb(57, 60, 65);
+    --secondary-color: rgba(232, 102, 236);
+}
+
+h1 {
+    margin: 1.5rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2.5rem;
+}
+
+#head-sub {
+    color: white;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.card {
+    border: 2px dashed white;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: 1rem;
+    flex-grow: 1;
+}
+
+.card-head {
+    justify-content: flex-start;
+    color: var(--secondary-color);
+    font-weight:bolder;
+    position: relative;
+    bottom: 1.3rem;
+    background-color: var(--main-bg-color);
+    width: 90%;
+    align-items: center;
+    display: flex;
+    padding: .5rem;
+    border-radius: 10px;
+    border: white solid 1px;
+    font-size: 1.5rem;
+}
+
+.code-snip {
+    margin: 1rem;
+    border-radius: 10px;
+    /* background-color: var(--secondary-color); */
+    padding: 1rem;
+    color: white;
+    white-space: pre-line;
+    line-height: 1.8rem;
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-grow: 5;
+    background: linear-gradient(120deg, rgba(232, 102, 236, 0.3) 0%, rgba(232, 102, 236, 0.6) 100%);
+    user-select: all;
+}
+
+.code-snip:hover {
+    font-size:large;
+    /* background: linear-gradient(120deg, rgba(232, 102, 236, 0.3) 0%, rgba(232, 102, 236, 0.6) 100%); */
+    animation: gradient 3s ease infinite;
+    background: radial-gradient(circle, rgba(232, 102, 236, 0.3) 0%, rgba(232, 102, 236, 0.6) 100%);
+    transition: all 0.5s ease-out;
+}
+
+
+.descrip {
+    color: var(--secondary-color);
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 2.5rem;
+    margin-top: 4rem;
+    color: white;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+    .section {
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex: 0 0 50%;
+    }
+    .card {
+        flex-direction: column;
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .section {
+        flex-direction: column;
+        flex-wrap:wrap;
+    }
+    .card {
+        flex: 0 0 90%;
+        flex-direction: column;
+    }
+}

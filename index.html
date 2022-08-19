@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/reset.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>Mini-Project-28</title>
+  </head>
+  <body>
+    <header class="head">
+      <div><h1>CSS Snippet Cheat Sheet</h1></div>
+      <div id="head-sub">
+        Ever have trouble recalling the exact synatx for your favorite CSS code?
+        Look no further! It is all saved here for easy reference.
+      </div>
+    </header>
+
+    <main>
+      <section class="grid">
+        <!-- first 3 cards -->
+        <div class="card one">
+          <div class="card-head">
+            <h3>Flexbox Row</h3>
+          </div>
+          <div class="descrip">
+            Use these three properties to create a Flexbox row layout.
+          </div>
+          <pre class="code-snip">
+                    <code>.row {
+                            dispaly: flex;
+                            flex-direction: row;
+                            flex-wrap: wrap;
+                        }
+                    </code>
+            </pre>
+        </div>
+        <div class="card two">
+          <div class="card-head">
+            <h3>Flexbox Column</h3>
+          </div>
+          <div class="descrip">Use this to create a Flexbox column layout.</div>
+          <pre class="code-snip">
+            <code>.column {
+                display: flex;
+                flex-direction: column
+              }
+            </code>
+        </pre>
+        </div>
+        <div class="card three">
+          <div class="card-head">
+            <h3>CSS Grid Layout</h3>
+          </div>
+          <div class="descrip">Build a 12-column layouit using CSS Grid.</div>
+          <pre class="code-snip">
+            <code>.grid {
+                display: grid;
+                width: 100%;
+                grid-template-columns: repeat(12, 1fr;
+            }
+            </code>
+        </pre>
+        </div>
+        <div class="card four">
+          <div class="card-head">
+            <h3>Linear Gradients</h3>
+          </div>
+          <div class="descrip">
+            This will create a background linear gradient from top to bottom.
+          </div>
+          <pre class="code-snip">
+            <code>.linear-gradient-background {
+                background-image: linear-gradient (
+                    rgba(232, 102, 236, 0.3) 0%,
+                    rgba(232, 102, 236, 0.6) 100%
+                );
+            }
+            </code>
+        </pre>
+        </div>
+        <div class="card five">
+          <div class="card-head">
+            <h3>Box Transition Glow</h3>
+          </div>
+          <div class="descrip">
+            Use transition and box shadow to glow on hover.
+          </div>
+          <pre class="code-snip">
+            <code
+              >.code-card .card-header (
+                border-radius: 8px;
+                transition: all 0.5s ease-in-out;
+              )
+
+              .code-card:hover,
+              .code-card:hover .card-header {
+                box-shadow: inset 0px 0px 8px
+                rgba(232, 102, 236, 1), 0 0 15px
+                rgba(232, 102, 236, 1);
+              }
+            </code>
+        </pre>
+        </div>
+        <div class="card six">
+          <div class="card-head">
+            <h3>Overlay Card with Title</h3>
+          </div>
+          <div class="descrip">
+            Use position properties and negative margins to raise elements
+            higher than their natural starting point.
+          </div>
+          <pre class="code-snip">
+            <code
+              >.card-header {
+                position: relative;
+                margin-top: -20px;
+              }
+            </code>
+        </pre>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div><h2>Made with ❤️ and CSS</h2></div>
+    </footer>
+  </body>
+</html>
